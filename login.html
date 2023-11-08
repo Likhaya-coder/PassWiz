@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassWiz</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="main">
+        <header>
+            <nav>
+                <div class="logo">PassWiz</div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="authentication">
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="#">Signup</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="hero-section">
+            <div class="hero-bg-image"></div>
+            <div class="login-form">
+                <h1>Welcome Back!</h1>
+                <p>Please enter your details</p>
+                <form onsubmit="return validateForm()">
+                    <label for="">Email:</label>
+                    <input type="text" id="email">
+                    <br><br><br>
+                    <label for="">Password:</label>
+                    <input type="password" id="password">
+                    <a href="passwordReset.html">Forgot password?</a>
+                    <button type="submit">Login</button>
+                    <a href="#">Don't have an account? Signup</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/login-validation.js"></script>
+</body>
+</html>
